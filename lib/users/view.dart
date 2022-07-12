@@ -21,7 +21,7 @@ class UsersList extends StatelessWidget {
               return ListView.builder(
                 itemCount: snapshot.data!.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return Text(snapshot.data![index].username);
+                  return Text(snapshot.data![index].address.street);
                 },
               );
             } else if (snapshot.hasError) {
